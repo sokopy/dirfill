@@ -1,6 +1,6 @@
 import os, time, random
 
-os.system("title Dirfill v.1")
+os.system("title Dirfill v1.1")
 while True:
     os.system("color 7 & cls")
     print("""
@@ -22,10 +22,6 @@ while True:
 def get_random_unicode(length):
     get_char = chr
     include_ranges = [
-        ( 0x0021, 0x0021 ),
-        ( 0x0023, 0x0026 ),
-        ( 0x0028, 0x007E ),
-        ( 0x00A1, 0x00AC ),
         ( 0x00AE, 0x00FF ),
         ( 0x0100, 0x017F ),
         ( 0x0180, 0x024F ),
