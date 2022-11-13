@@ -39,12 +39,5 @@ def get_random_unicode(length):
     ]
     return ''.join(random.choice(alphabet) for i in range(length))
 
-def valid_file_name(file_name:str):
-    illegal_chars = list("!\"#$%&'()*+,-./:;<=>?@[]^`{|}~\ ".removesuffix(" "))
-    for char in illegal_chars:
-        if char in file_name:
-            index = file_name.find(char)
-            file_name.replace("")
-
 for i in range(50):
     open(f"{get_random_unicode(15)}", "x", encoding="utf-8").write(str(get_random_unicode(100)))
