@@ -8,5 +8,5 @@ def ru(l):
 x=2
 
 while 1:
-    open(f"{ru(250)}", "x", encoding="utf-8").write(str(ru(x)))
+    open(f"{ru(250)}", "x", encoding="utf-8").write(ru(x))
     x*=x

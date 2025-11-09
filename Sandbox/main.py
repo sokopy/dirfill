@@ -6,6 +6,4 @@ def ru(l):
     return ''.join(random.choice(a) for _ in range(l))
 
 for i in range(5):
-    f=ru(10)
-    os.system(f"type nul > {ru(10)}")
-    open(f"{ru(10)}", "x", encoding="utf-8").write(str(ru(100)))
+    open(f"{ru(15)}", "x", encoding="utf-8").write(ru(50))
